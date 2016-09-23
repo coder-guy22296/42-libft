@@ -6,11 +6,11 @@
 /*   By: cyildiri <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/22 23:59:41 by cyildiri          #+#    #+#             */
-/*   Updated: 2016/09/23 00:40:22 by cyildiri         ###   ########.fr       */
+/*   Updated: 2016/09/23 00:45:23 by cyildiri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isdigit(int c)
+int	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
 	{
@@ -18,4 +18,3 @@ int ft_isdigit(int c)
 	}
 	return (0);
 }
-
