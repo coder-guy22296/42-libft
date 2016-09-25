@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*strstr(const char *big, const char *little)
+char	*ft_strstr(const char *big, const char *little)
 {
 	char	*ptr;
 	int		index;
