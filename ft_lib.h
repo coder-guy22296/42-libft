@@ -6,7 +6,7 @@
 /*   By: cyildiri <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/23 20:14:04 by cyildiri          #+#    #+#             */
-/*   Updated: 2016/09/25 12:17:01 by cyildiri         ###   ########.fr       */
+/*   Updated: 2016/09/25 13:11:14 by cyildiri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,6 @@ int		ft_strdup(const char *s1);
 void    ft_bzero(void *s, size_t n);
 char	*strcpy(char *dst, const char *src);
 char    *strncpy(char *dst, const char *src, size_t len);
+char    *strchr(const char *s, int c);
 
 #endif
