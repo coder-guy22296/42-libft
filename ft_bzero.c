@@ -1,27 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lib.h                                           :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cyildiri <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/09/23 20:14:04 by cyildiri          #+#    #+#             */
-/*   Updated: 2016/09/25 09:53:05 by cyildiri         ###   ########.fr       */
+/*   Created: 2016/09/24 20:09:07 by cyildiri          #+#    #+#             */
+/*   Updated: 2016/09/25 09:44:24 by cyildiri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_LIB_H
-# define FT_LIB_H
+void	ft_bzero(void *s, size_t n)
+{
+	int i;
 
-int		ft_isalpha(int c);
-int		ft_isdigit(int c);
-int		ft_isalnum(int c);
-int		ft_isascii(int c);
-int		ft_isprint(int c);
-int		ft_toupper(int c);
-int		ft_tolower(int c);
-int		ft_strlen(char* str);
-int		ft_strdup(const char *s1);
-void    ft_bzero(void *s, size_t n);
-
-#endif
+	i = 0;
+	while (i < n)
+	{
+		s[i] = 0;
+		i++;
+	}
+}
