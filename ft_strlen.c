@@ -1,25 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lib.h                                           :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cyildiri <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/09/23 20:14:04 by cyildiri          #+#    #+#             */
-/*   Updated: 2016/09/24 17:29:40 by cyildiri         ###   ########.fr       */
+/*   Created: 2016/09/24 17:24:57 by cyildiri          #+#    #+#             */
+/*   Updated: 2016/09/24 19:04:15 by cyildiri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_LIB_H
-# define FT_LIB_H
+int	ft_strlen(char *str)
+{
+	int count;
 
-int ft_isalpha(int c);
-int ft_isdigit(int c);
-int ft_isalnum(int c);
-int ft_isascii(int c);
-int ft_isprint(int c);
-int ft_toupper(int c);
-int ft_tolower(int c);
-int ft_strlen(char* str);
-
-#endif
+	count = 0;
+	while (str[count] != '\0')
+	{
+		count++;
+	}
+	return (count);
+}
