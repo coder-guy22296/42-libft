@@ -6,7 +6,7 @@
 /*   By: cyildiri <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/23 20:14:04 by cyildiri          #+#    #+#             */
-/*   Updated: 2016/09/25 14:46:04 by cyildiri         ###   ########.fr       */
+/*   Updated: 2016/09/25 16:56:20 by cyildiri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,13 +23,14 @@ int		ft_tolower(int c);
 int		ft_strlen(char* str);
 int		ft_strdup(const char *s1);
 void    ft_bzero(void *s, size_t n);
-char	*strcpy(char *dst, const char *src);
-char    *strncpy(char *dst, const char *src, size_t len);
-char    *strchr(const char *s, int c);
-char    *strrchr(const char *s, int c);
-char    *strstr(const char *big, const char *little);
-char    *strnstr(const char *big, const char *little, size_t len);
-int		strcmp(const char *s1, const char *s2);
-int     strncmp(const char *s1, const char *s2, size_t n);
+char	*ft_strcpy(char *dst, const char *src);
+char    *ft_strncpy(char *dst, const char *src, size_t len);
+char    *ft_strchr(const char *s, int c);
+char    *ft_strrchr(const char *s, int c);
+char    *ft_strstr(const char *big, const char *little);
+char    *ft_strnstr(const char *big, const char *little, size_t len);
+int		ft_strcmp(const char *s1, const char *s2);
+int     ft_strncmp(const char *s1, const char *s2, size_t n);
+int		ft_atoi(const char *str);
 
 #endif
