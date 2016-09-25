@@ -6,7 +6,7 @@
 /*   By: cyildiri <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/23 20:14:04 by cyildiri          #+#    #+#             */
-/*   Updated: 2016/09/25 14:16:42 by cyildiri         ###   ########.fr       */
+/*   Updated: 2016/09/25 14:28:13 by cyildiri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,6 @@ char    *strchr(const char *s, int c);
 char    *strrchr(const char *s, int c);
 char    *strstr(const char *big, const char *little);
 char    *strnstr(const char *big, const char *little, size_t len);
+int		strcmp(const char *s1, const char *s2);
 
 #endif
