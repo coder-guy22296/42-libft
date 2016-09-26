@@ -6,9 +6,11 @@
 /*   By: cyildiri <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/25 20:18:59 by cyildiri          #+#    #+#             */
-/*   Updated: 2016/09/25 21:03:10 by cyildiri         ###   ########.fr       */
+/*   Updated: 2016/09/26 11:38:50 by cyildiri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <string.h>
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {

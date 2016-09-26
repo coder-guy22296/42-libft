@@ -6,9 +6,11 @@
 /*   By: cyildiri <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/25 22:05:56 by cyildiri          #+#    #+#             */
-/*   Updated: 2016/09/26 10:55:50 by cyildiri         ###   ########.fr       */
+/*   Updated: 2016/09/26 11:40:58 by cyildiri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <string.h>
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {

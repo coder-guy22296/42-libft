@@ -6,9 +6,11 @@
 /*   By: cyildiri <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/25 14:15:39 by cyildiri          #+#    #+#             */
-/*   Updated: 2016/09/25 14:19:09 by cyildiri         ###   ########.fr       */
+/*   Updated: 2016/09/26 11:37:15 by cyildiri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <string.h>
 
 char    *ft_strnstr(const char *big, const char *little, size_t len)
 {

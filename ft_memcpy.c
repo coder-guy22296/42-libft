@@ -6,9 +6,11 @@
 /*   By: cyildiri <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/25 20:47:48 by cyildiri          #+#    #+#             */
-/*   Updated: 2016/09/25 21:03:20 by cyildiri         ###   ########.fr       */
+/*   Updated: 2016/09/26 11:39:17 by cyildiri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <string>
 
 void    *ft_memcpy(void *dst, const void *src, size_t n)
 {

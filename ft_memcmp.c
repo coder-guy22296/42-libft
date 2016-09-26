@@ -6,9 +6,11 @@
 /*   By: cyildiri <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/25 19:43:55 by cyildiri          #+#    #+#             */
-/*   Updated: 2016/09/25 20:07:56 by cyildiri         ###   ########.fr       */
+/*   Updated: 2016/09/26 11:37:44 by cyildiri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <string.h>
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

@@ -6,9 +6,11 @@
 /*   By: cyildiri <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/24 20:09:07 by cyildiri          #+#    #+#             */
-/*   Updated: 2016/09/25 09:44:24 by cyildiri         ###   ########.fr       */
+/*   Updated: 2016/09/26 11:35:55 by cyildiri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <string.h>
 
 void	ft_bzero(void *s, size_t n)
 {

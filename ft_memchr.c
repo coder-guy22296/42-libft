@@ -6,9 +6,11 @@
 /*   By: cyildiri <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/25 17:09:35 by cyildiri          #+#    #+#             */
-/*   Updated: 2016/09/25 18:23:17 by cyildiri         ###   ########.fr       */
+/*   Updated: 2016/09/26 11:38:14 by cyildiri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <string.h>
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

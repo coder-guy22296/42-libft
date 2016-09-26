@@ -6,9 +6,11 @@
 /*   By: cyildiri <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/25 21:32:14 by cyildiri          #+#    #+#             */
-/*   Updated: 2016/09/25 21:36:44 by cyildiri         ###   ########.fr       */
+/*   Updated: 2016/09/26 11:40:02 by cyildiri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <string.h>
 
 void    *ft_memset(void *b, int c, size_t len)
 {

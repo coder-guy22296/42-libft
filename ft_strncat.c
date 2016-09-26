@@ -6,9 +6,11 @@
 /*   By: cyildiri <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/25 21:57:00 by cyildiri          #+#    #+#             */
-/*   Updated: 2016/09/25 22:03:05 by cyildiri         ###   ########.fr       */
+/*   Updated: 2016/09/26 11:40:33 by cyildiri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <string.h>
 
 char    *ft_strncat(char *s1, const char *s2, size_t n)
 {
