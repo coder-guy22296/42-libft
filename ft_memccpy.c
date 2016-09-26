@@ -6,7 +6,7 @@
 /*   By: cyildiri <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/25 21:21:36 by cyildiri          #+#    #+#             */
-/*   Updated: 2016/09/26 11:39:39 by cyildiri         ###   ########.fr       */
+/*   Updated: 2016/09/26 12:59:42 by cyildiri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {
-    int             index;
+    size_t             index;
     unsigned char   *src_ptr;
     unsigned char   *dst_ptr;
 

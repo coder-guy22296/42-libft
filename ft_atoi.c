@@ -6,14 +6,13 @@
 /*   By: cyildiri <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/25 16:18:31 by cyildiri          #+#    #+#             */
-/*   Updated: 2016/09/25 16:58:47 by cyildiri         ###   ########.fr       */
+/*   Updated: 2016/09/26 11:54:04 by cyildiri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int		ft_atoi(const char *str)///NO ERROR condtions handled test + fix req!
 {
 	int	num;
-	int	len;
 	int	i;
 	int	multiplier;
 
@@ -25,7 +24,7 @@ int		ft_atoi(const char *str)///NO ERROR condtions handled test + fix req!
 	while (i >= 0)
 	{
 		num += multiplier * (str[i] - '0');
-		multiplier *= 10
+		multiplier *= 10;
 		i--;
 	}
 	return (num);

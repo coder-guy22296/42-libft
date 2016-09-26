@@ -6,22 +6,24 @@
 /*   By: cyildiri <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/25 22:05:56 by cyildiri          #+#    #+#             */
-/*   Updated: 2016/09/26 11:40:58 by cyildiri         ###   ########.fr       */
+/*   Updated: 2016/09/26 12:34:02 by cyildiri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "ft_lib.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
     int index;
 	int max_cpy;
+	int dst_len;
     int i;
 
+	dst_len = ft_strlen(dst);
     index = 0;
     while (dst[index] != '\0')
         index++;
-	max_cpy = (size - ft_strlen(dst) - 1);
+	max_cpy = (size - dst_len - 1);
     i = 0;
     while (i < max_cpy)
     {
@@ -29,6 +31,6 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
         index++;
         i++;
     }
-    s1[index] = '\0';
-    return (s1);
+    dst[index] = '\0';
+    return (dst_len + ft_strlen(src));
 }

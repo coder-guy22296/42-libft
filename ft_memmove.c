@@ -6,15 +6,16 @@
 /*   By: cyildiri <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/25 20:18:59 by cyildiri          #+#    #+#             */
-/*   Updated: 2016/09/26 11:38:50 by cyildiri         ###   ########.fr       */
+/*   Updated: 2016/09/26 12:47:46 by cyildiri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
+#include <stdlib.h>//remove this, malloc should not be used here
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	int 			index;
+	size_t 			index;
 	unsigned char 	*src_ptr;
     unsigned char   *dst_ptr;
 	unsigned char	*new_dst;

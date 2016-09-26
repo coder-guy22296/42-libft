@@ -6,9 +6,12 @@
 /*   By: cyildiri <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/25 10:31:26 by cyildiri          #+#    #+#             */
-/*   Updated: 2016/09/25 10:48:21 by cyildiri         ###   ########.fr       */
+/*   Updated: 2016/09/26 12:42:12 by cyildiri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdlib.h>
+#include "ft_lib.h"
 
 char    *ft_strcpy(char *dst, const char *src)
 {

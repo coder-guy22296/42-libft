@@ -6,7 +6,7 @@
 /*   By: cyildiri <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/25 17:09:35 by cyildiri          #+#    #+#             */
-/*   Updated: 2016/09/26 11:38:14 by cyildiri         ###   ########.fr       */
+/*   Updated: 2016/09/26 12:55:28 by cyildiri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,14 @@
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	char	*ptr;
-	int		index;
+	size_t	index;
 
 	ptr = (char *)s;
 	index = 0;
 	while (index < n)
 	{
 		if(*ptr == (char)c)
-			return(ptr)
+			return(ptr);
 		ptr++;
 		index++;
 	}

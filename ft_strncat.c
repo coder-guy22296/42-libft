@@ -6,7 +6,7 @@
 /*   By: cyildiri <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/25 21:57:00 by cyildiri          #+#    #+#             */
-/*   Updated: 2016/09/26 11:40:33 by cyildiri         ###   ########.fr       */
+/*   Updated: 2016/09/26 12:25:11 by cyildiri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char    *ft_strncat(char *s1, const char *s2, size_t n)
 {
-    int index;
-    int i;
+    int		index;
+    size_t	i;
 
     index = 0;
     while (s1[index] != '\0')

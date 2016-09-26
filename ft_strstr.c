@@ -6,9 +6,11 @@
 /*   By: cyildiri <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/25 13:44:46 by cyildiri          #+#    #+#             */
-/*   Updated: 2016/09/25 14:14:17 by cyildiri         ###   ########.fr       */
+/*   Updated: 2016/09/26 12:12:06 by cyildiri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <string.h>
 
 char	*ft_strstr(const char *big, const char *little)
 {
@@ -23,7 +25,7 @@ char	*ft_strstr(const char *big, const char *little)
 		if (big[index] == little[i] && little[i] != '\0')
 		{
 			if (i == 0)
-				ptr = &big[index];
+				ptr = (char *)&big[index];
 			else if (little[i + 1] == '\0')
 				return (ptr);
 			i++;

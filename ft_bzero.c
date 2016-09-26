@@ -6,7 +6,7 @@
 /*   By: cyildiri <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/24 20:09:07 by cyildiri          #+#    #+#             */
-/*   Updated: 2016/09/26 11:35:55 by cyildiri         ###   ########.fr       */
+/*   Updated: 2016/09/26 11:57:48 by cyildiri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,14 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	int i;
+	size_t	i;
+	int 	*ptr;
 
+	ptr = (int *)s;
 	i = 0;
 	while (i < n)
 	{
-		s[i] = 0;
+		ptr[i] = 0;
 		i++;
 	}
 }

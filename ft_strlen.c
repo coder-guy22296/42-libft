@@ -6,7 +6,7 @@
 /*   By: cyildiri <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/24 17:24:57 by cyildiri          #+#    #+#             */
-/*   Updated: 2016/09/26 11:17:44 by cyildiri         ###   ########.fr       */
+/*   Updated: 2016/09/26 12:26:30 by cyildiri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@ int	ft_strlen(const char *s)
 	int count;
 
 	count = 0;
-	while (str[count] != '\0')
+	while (s[count] != '\0')
 	{
 		count++;
 	}
