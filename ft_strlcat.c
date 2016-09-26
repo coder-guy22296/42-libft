@@ -14,23 +14,23 @@
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-    int index;
+	int index;
 	int max_cpy;
 	int dst_len;
-    int i;
+	int i;
 
 	dst_len = ft_strlen(dst);
-    index = 0;
-    while (dst[index] != '\0')
-        index++;
+	index = 0;
+	while (dst[index] != '\0')
+		index++;
 	max_cpy = (size - dst_len - 1);
-    i = 0;
-    while (i < max_cpy)
-    {
-        dst[index] = src[i];
-        index++;
-        i++;
-    }
-    dst[index] = '\0';
-    return (dst_len + ft_strlen(src));
+	i = 0;
+	while (i < max_cpy)
+	{
+		dst[index] = src[i];
+		index++;
+		i++;
+	}
+	dst[index] = '\0';
+	return (dst_len + ft_strlen(src));
 }

@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_atoi(const char *str)///NO ERROR condtions handled test + fix req!
+int	ft_atoi(const char *str)///NO ERROR condtions handled test + fix req!
 {
 	int	num;
 	int	i;

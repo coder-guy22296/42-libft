@@ -6,7 +6,7 @@
 /*   By: cyildiri <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/25 19:43:55 by cyildiri          #+#    #+#             */
-/*   Updated: 2016/09/26 11:47:28 by cyildiri         ###   ########.fr       */
+/*   Updated: 2016/09/26 13:52:35 by cyildiri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	size_t 			index;
+	size_t			index;
 	unsigned char	*ptr1;
-	unsigned char 	*ptr2;
+	unsigned char	*ptr2;
 
 	index = 0;
 	ptr1 = (unsigned char *)s1;

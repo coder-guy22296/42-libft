@@ -13,7 +13,7 @@
 #include <stdlib.h>
 #include "ft_lib.h"
 
-char    *ft_strcpy(char *dst, const char *src)
+char	*ft_strcpy(char *dst, const char *src)
 {
 	int length;
 	int index;
