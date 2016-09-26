@@ -6,7 +6,7 @@
 /*   By: cyildiri <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/23 20:14:04 by cyildiri          #+#    #+#             */
-/*   Updated: 2016/09/26 10:36:43 by cyildiri         ###   ########.fr       */
+/*   Updated: 2016/09/26 11:18:18 by cyildiri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int		ft_isascii(int c);
 int		ft_isprint(int c);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
-int		ft_strlen(char* str);
+int		ft_strlen(const char *s);
 int		ft_strdup(const char *s1);
 void    ft_bzero(void *s, size_t n);
 char	*ft_strcpy(char *dst, const char *src);

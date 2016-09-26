@@ -6,11 +6,11 @@
 /*   By: cyildiri <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/24 17:24:57 by cyildiri          #+#    #+#             */
-/*   Updated: 2016/09/24 19:04:15 by cyildiri         ###   ########.fr       */
+/*   Updated: 2016/09/26 11:17:44 by cyildiri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+int	ft_strlen(const char *s)
 {
 	int count;
 
