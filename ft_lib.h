@@ -6,7 +6,7 @@
 /*   By: cyildiri <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/23 20:14:04 by cyildiri          #+#    #+#             */
-/*   Updated: 2016/09/25 21:34:30 by cyildiri         ###   ########.fr       */
+/*   Updated: 2016/09/25 21:55:21 by cyildiri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,5 +38,6 @@ void    *ft_memmove(void *dst, const void *src, size_t len);
 void    *ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n);
 void    *ft_memset(void *b, int c, size_t len);
+char    *ft_strcat(char *s1, const char *s2);
 
 #endif
