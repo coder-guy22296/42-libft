@@ -11,27 +11,7 @@
 /* ************************************************************************** */
 
 #include <string.h>
-/*
-char	*ft_strrchr(const char *s, int c)
-{
-	char	*ptr;
-	int		index;
 
-	ptr = NULL;
-	index = 0;
-	while (s[index] != '\0')
-		index++;
-	while (index >= 0)
-	{
-		if (s[index] == (char)c)
-			ptr = (char *)&s[index];
-		index--;
-	}
-	return (ptr);
-}
-*/
-
-//the working
 char	*ft_strrchr(const char *s, int c)
 {
 	char	*ptr;
@@ -49,5 +29,3 @@ char	*ft_strrchr(const char *s, int c)
 		ptr = (char *)&s[index];
 	return (ptr);
 }
-
-
