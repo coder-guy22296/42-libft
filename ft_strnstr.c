@@ -11,27 +11,25 @@
 /* ************************************************************************** */
 
 #include <string.h>
+#include "ft_lib.h"
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
 	char	*ptr;
 	int		index;
-	size_t	i;
 
 	index = 0;
-	i = 0;
-	while (big[index] != '\0')
+	if (*little == '\0' || len <= 0)
+		return ((char *)big);
+	while (index < (int)len)
 	{
-		if (big[index] == little[i] && little[i] != '\0')
+		if (big[index] == little[0])
 		{
-			if (i == 0)
-				ptr = (char *)&big[index];
-			else if (i == len - 1)
-				return (ptr);
-			i++;
+			ptr = (char *)&big[index];
+			if (ft_strlen(little) <= (int)len - index)
+				if (!ft_memcmp(ptr, little, ft_strlen(little)))
+					return (ptr);
 		}
-		else
-			i = 0;
 		index++;
 	}
 	return (NULL);

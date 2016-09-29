@@ -26,7 +26,7 @@ char	*ft_strstr(const char *big, const char *little)
 		if (big[index] == little[0])
 		{
 			ptr = (char *)&big[index];
-			if (!ft_memcmp(ptr, little, ft_strlen(little) - 1))
+			if (!ft_memcmp(ptr, little, ft_strlen(little)))
 				return (ptr);
 		}
 		index++;
