@@ -12,21 +12,37 @@
 
 #include "ft_lib.h"
 
-int	ft_junk_filter(char *str)
+void	ft_inti_vars(int *i, int *num, int *multiplier)
 {
-	int has_sign;
-
-	has_sign = 0;
-	while (!ft_isdigit((int)*str))
-	{
-		if (*str == '+' || *str == '-')
-			has_sign = 1;
-		str++;
-	}
-	return (has_sign);
+	*i = 0;
+	*num = 0;
+	*multiplier = 1;
 }
 
-int	ft_atoi(const char *str)
+int		ft_junk_filter(char **str, int *end_index)
+{
+	int sign;
+
+	sign = 1;
+	while (!ft_isdigit((int)**str))
+	{
+		if (**str == ' ' || **str == '\t' || **str == '\n'
+		|| **str == '\v' || **str == '\f' || **str == '\r'
+		|| **str == '-' || **str == '+')
+		{
+			if (**str == '-')
+				sign = -1;
+			(*str)++;
+		}
+		else
+			return (0);
+	}
+	while ((*str)[*end_index] != '\0')
+		(*end_index)++;
+	return (sign);
+}
+
+int		ft_atoi(const char *str)
 {
 	int		num;
 	int		i;
@@ -34,13 +50,9 @@ int	ft_atoi(const char *str)
 	int		sign;
 	char	*ptr;
 
-	i = 0;
-	num = 0;
-	multiplier = 1;
-	ptr = (char *)str;
-	sign = ft_junk_filter(ptr);
-	while (ptr[i] != '\0')
-		i++;
+	ft_inti_vars(&i, &num, &multiplier);
+	ptr = (char *)(str);
+	sign = ft_junk_filter(&ptr, &i);
 	while (i >= 0)
 	{
 		if (ft_isdigit((int)ptr[i]))
@@ -48,7 +60,12 @@ int	ft_atoi(const char *str)
 			num += multiplier * (ptr[i] - '0');
 			multiplier *= 10;
 		}
+		else
+		{
+			num = 0;
+			multiplier = 1;
+		}
 		i--;
 	}
-	return (num);
+	return (num * sign);
 }
