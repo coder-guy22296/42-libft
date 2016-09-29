@@ -22,16 +22,22 @@ void	ft_inti_vars(int *i, int *num, int *multiplier)
 int		ft_junk_filter(char **str, int *end_index)
 {
 	int sign;
+	int sign_found;
 
 	sign = 1;
+	sign_found = 0;
 	while (!ft_isdigit((int)**str))
 	{
-		if (**str == ' ' || **str == '\t' || **str == '\n'
-		|| **str == '\v' || **str == '\f' || **str == '\r'
-		|| **str == '-' || **str == '+')
+		if (sign_found)
+			return (0);
+		if ((**str == ' ' || **str == '\t' || **str == '\n'
+		|| **str == '\v' || **str == '\f' || **str == '\r'))
+			(*str)++;
+		else if (**str == '-' || **str == '+')
 		{
 			if (**str == '-')
 				sign = -1;
+			sign_found = 1;
 			(*str)++;
 		}
 		else
