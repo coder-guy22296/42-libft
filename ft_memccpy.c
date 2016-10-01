@@ -21,9 +21,11 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 	index = 0;
 	src_ptr = (unsigned char *)src;
 	dst_ptr = (unsigned char *)dst;
-	while (index < n && dst_ptr[index - 1] != (unsigned char)c)
+	while (index < n)
 	{
 		dst_ptr[index] = src_ptr[index];
+		if (dst_ptr[index] == (unsigned char)c)
+			return (&dst_ptr[index + 1]);
 		index++;
 	}
 	if (index == n)
