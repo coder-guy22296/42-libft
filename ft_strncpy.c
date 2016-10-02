@@ -19,7 +19,7 @@ char	*ft_strncpy(char *dst, const char *src, size_t len)
 
 	index = 0;
 	i = 0;
-	while (index <= len)
+	while (index < len)
 	{
 		if (src[i] != '\0')
 		{
@@ -30,5 +30,6 @@ char	*ft_strncpy(char *dst, const char *src, size_t len)
 			dst[index] = '\0';
 		index++;
 	}
+	dst[index] = '\0';
 	return (dst);
 }
