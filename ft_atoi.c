@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_lib.h"
+#include "libft.h"
 
 void	ft_inti_vars(int *i, int *num, int *multiplier)
 {
