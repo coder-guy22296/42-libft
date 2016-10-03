@@ -6,12 +6,12 @@
 /*   By: cyildiri <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/23 20:14:04 by cyildiri          #+#    #+#             */
-/*   Updated: 2016/10/02 13:17:14 by cyildiri         ###   ########.fr       */
+/*   Updated: 2016/10/03 10:30:47 by cyildiri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_LIB_H
-# define FT_LIB_H
+#ifndef LIBFT_H
+# define LIBFT_H
 # include <string.h>
 
 int		ft_isalpha(int c);
