@@ -6,9 +6,12 @@
 /*   By: cyildiri <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/03 11:50:18 by cyildiri          #+#    #+#             */
-/*   Updated: 2016/10/03 12:28:54 by cyildiri         ###   ########.fr       */
+/*   Updated: 2016/10/03 13:16:46 by cyildiri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdlib.h>
+#include <string.h>
 
 void	ft_strdel(char **as)
 {
