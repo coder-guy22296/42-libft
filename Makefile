@@ -32,5 +32,5 @@ $(NAME):
 clean:
 	rm -rf $(OFILES)
 fclean: clean
-	rm $(NAME).a
+	rm -f $(NAME).a
 re: fclean all
