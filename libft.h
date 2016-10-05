@@ -6,7 +6,7 @@
 /*   By: cyildiri <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/23 20:14:04 by cyildiri          #+#    #+#             */
-/*   Updated: 2016/10/04 21:19:30 by cyildiri         ###   ########.fr       */
+/*   Updated: 2016/10/05 11:26:38 by cyildiri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,9 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 int		ft_isspace(int c);
 char	*ft_strtrim(char const *s);
-void	ft_stradel(char **arr);
-int		ft_cntwords(char *str, char delim);
+void	ft_stradel(char ***arr);
+int		ft_cntwords(char const *str, char delim);
+char	*ft_getword(char const *str, char delim, int index);//not implemented
+char    **ft_strsplit(char const *s, char c);
 
 #endif

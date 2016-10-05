@@ -6,7 +6,7 @@
 /*   By: cyildiri <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/04 21:11:30 by cyildiri          #+#    #+#             */
-/*   Updated: 2016/10/04 21:15:58 by cyildiri         ###   ########.fr       */
+/*   Updated: 2016/10/05 11:42:26 by cyildiri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,16 +17,17 @@ int	ft_cntwords(char const *str, char delim)
     int     words;
 
     words = 0;
-    word_start = 0;
-    lastchar = c;
+    lastchar = delim;
     index = 0;
-    while (str[index] != '/0')
+    while (str[index] != '\0')
     {
-		if (str[index] == c)
-			if (lastchar != c)
+		if (str[index] == delim)
+			if (lastchar != delim)
 				words++;
-        last_char = str[index];
+        lastchar = str[index];
         index++;
     }
+	if (lastchar != delim)
+		words++;
 	return (words);
 }
