@@ -12,14 +12,14 @@
 
 #include "libft.h"
 
-void	ft_inti_vars(int *i, int *num, int *multiplier)
+static void	ft_inti_vars(int *i, int *num, int *multiplier)
 {
 	*i = 0;
 	*num = 0;
 	*multiplier = 1;
 }
 
-int		ft_junk_filter(char **str, int *end_index)
+static int	ft_junk_filter(char **str, int *end_index)
 {
 	int sign;
 	int sign_found;
@@ -48,7 +48,7 @@ int		ft_junk_filter(char **str, int *end_index)
 	return (sign);
 }
 
-int		ft_atoi(const char *str)
+int			ft_atoi(const char *str)
 {
 	int		num;
 	int		i;

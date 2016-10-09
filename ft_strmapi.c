@@ -22,7 +22,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	index = 0;
 	while (s[index] != '\0')
 	{
-		out[index] = f(index, s[index])
+		out[index] = f(index, s[index]);
 		index++;
 	}
 	return (out);

@@ -10,21 +10,23 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {
 	unsigned int	index;
 	int				i;
 	char			*out_str;
-	
-	if(!(out_str = ft_strnew(len)))
+
+	if (!(out_str = ft_strnew(len)))
 		return (NULL);
-		
 	index = start;
 	i = 0;
-	while (index < start + length)
+	while (index < start + len)
 	{
 		out_str[i] = s[index];
 		i++;
 		index++;
 	}
+	return (out_str);
 }

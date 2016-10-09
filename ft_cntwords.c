@@ -12,21 +12,21 @@
 
 int	ft_cntwords(char const *str, char delim)
 {
-    char    lastchar;
-    int     index;
-    int     words;
+	char	lastchar;
+	int		index;
+	int		words;
 
-    words = 0;
-    lastchar = delim;
-    index = 0;
-    while (str[index] != '\0')
-    {
+	words = 0;
+	lastchar = delim;
+	index = 0;
+	while (str[index] != '\0')
+	{
 		if (str[index] == delim)
 			if (lastchar != delim)
 				words++;
-        lastchar = str[index];
-        index++;
-    }
+		lastchar = str[index];
+		index++;
+	}
 	if (lastchar != delim)
 		words++;
 	return (words);

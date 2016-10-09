@@ -6,7 +6,7 @@
 /*   By: cyildiri <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/23 20:14:04 by cyildiri          #+#    #+#             */
-/*   Updated: 2016/10/05 11:26:38 by cyildiri         ###   ########.fr       */
+/*   Updated: 2016/10/05 13:44:18 by cyildiri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ char	*ft_strnew(size_t size);
 void	ft_strdel(char **as);
 void	ft_strclr(char *s);
 void	ft_striter(char *s, void (*f)(char *));
-void    ft_striteri(char *s, void (*f)(unsigned int, char *));
+void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 char	*ft_strmap(char const *s, char (*f)(char));
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 int		ft_strequ(char const *s1, char const *s2);
@@ -59,7 +59,6 @@ int		ft_isspace(int c);
 char	*ft_strtrim(char const *s);
 void	ft_stradel(char ***arr);
 int		ft_cntwords(char const *str, char delim);
-char	*ft_getword(char const *str, char delim, int index);//not implemented
-char    **ft_strsplit(char const *s, char c);
+char	**ft_strsplit(char const *s, char c);
 
 #endif

@@ -21,7 +21,7 @@ void	*ft_memalloc(size_t size)
 	if (!(mem = (char *)malloc(size)))
 		return (NULL);
 	i = 0;
-	while (i < size)
+	while (i < (int)size)
 	{
 		mem[i] = '\0';
 		i++;
