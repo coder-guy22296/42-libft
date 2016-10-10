@@ -16,10 +16,11 @@ static int	ft_find_start(char const *s, int *index, int low)
 {
 	while (s[*index] != '\0')
 	{
-		if (!ft_isspace(s[*index] && low == -1))
+		if (!ft_isspace(s[*index]) && low == -1)
 			low = *index;
 		(*index)++;
 	}
+	(*index)--;
 	return (low);
 }
 
@@ -65,7 +66,7 @@ char		*ft_strtrim(char const *s)
 	index = 0;
 	low = ft_find_start(s, &index, -1);
 	if (low == -1)
-		return (s);
+		return ((char *)s);
 	high = ft_find_end(s, &index, -1);
 	if (!(out_str = ft_strnew((high + 1) - low)))
 		return (NULL);

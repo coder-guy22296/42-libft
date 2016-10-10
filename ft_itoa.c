@@ -16,25 +16,23 @@ char	*ft_itoa(int n)
 {
 	int		len;
 	int		index;
-	double	tmp;
 	char	*out_str;
 	int		sign;
 
 	len = ft_count_digits(n);
-	tmp = (double)n;
-	sign = ft_pop_sign(&tmp);
+	sign = ft_pop_sign(&n);
 	if(!(out_str = ft_strnew(len + sign)))
 		return (NULL);
 	index = (len + sign) - 1;
 	while (index > 0)
 	{
-		out_str[index] = (tmp % 10) + '0';
-		tmp /= 10;
+		out_str[index] = (n % 10) + '0';
+		n /= 10;
 		index--;
 	}
 	if (sign)
 		out_str[index] = '-';
 	else
-		out_str[index] = (tmp % 10) + '0';
+		out_str[index] = (n % 10) + '0';
 	return (out_str);
 }
