@@ -14,7 +14,6 @@
 
 static int	ft_find_start(char const *s, int *index, int low)
 {
-	low = -1;
 	while (s[*index] != '\0')
 	{
 		if (!ft_isspace(s[*index] && low == -1))
@@ -38,7 +37,7 @@ static int	ft_find_end(char const *s, int *index, int high)
 	return (high);
 }
 
-static void	ft_copy_str(char const *s, char *out_str, int high, int low)
+static char	*ft_copy_str(char const *s, char *out_str, int high, int low)
 {
 	int len;
 	int index;
@@ -53,7 +52,9 @@ static void	ft_copy_str(char const *s, char *out_str, int high, int low)
 		i--;
 		index--;
 	}
+	return (out_str);
 }
+
 char		*ft_strtrim(char const *s)
 {
 	int		index;
@@ -62,57 +63,12 @@ char		*ft_strtrim(char const *s)
 	int		low;
 
 	index = 0;
-	low = ft_find_start(char const *s, int *index, -1)
+	low = ft_find_start(s, &index, -1);
 	if (low == -1)
 		return (s);
-	high = ft_find_end(char const *s, int *index, -1)
+	high = ft_find_end(s, &index, -1);
 	if (!(out_str = ft_strnew((high + 1) - low)))
 		return (NULL);
-	ft_copy_str(char const *s, char *out_str, int high, int low)
+	out_str = ft_copy_str(s, out_str, high, low);
 	return (out_str);
 }
-/*
-char		*ft_strtrim(char const *s)
-{
-	int		index;
-	int		i;
-	int		len;
-	char	*out_str;
-	int		high;
-	int		low;
-
-	index = 0;
-	low = -1;
-	high = -1;
-	len = -1;
-	while (s[index] != '\0')
-	{
-		if (!ft_isspace(s[index]) && low == -1)
-			low = index;
-		index++;
-	}
-	if (low == -1)
-		return (s);
-	while (index >= 0 && high != index)
-	{
-		if (!ft_isspace(s[index]) && high == -1)
-		{
-			high = index;
-			len = (high + 1) - low;
-			break ;
-		}
-		index--;
-	}
-	if (!(out_str = ft_strnew((high + 1) - low)))
-		return (NULL);
-	index = high;
-	i = len - 1;
-	while (index >= low)
-	{
-		out_str[i] = s[index];
-		i--;
-		index--;
-	}
-	return (out_str);
-}
-*/

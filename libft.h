@@ -60,5 +60,16 @@ char	*ft_strtrim(char const *s);
 void	ft_stradel(char ***arr);
 int		ft_cntwords(char const *str, char delim);
 char	**ft_strsplit(char const *s, char c);
+int		ft_pop_sign(int *n);
+int		ft_count_digits(int n);
+char	*ft_itoa(int n);
+void	ft_putchar(char c);
+void	ft_putstr(char const *s);
+void	ft_putendl(char const *s);
+void	ft_putnbr(int n);
+void	ft_putchar_fd(char c, int fd);
+void	ft_putstr_fd(char const *s, int fd);
+void	ft_putendl_fd(char const *s, int fd);
+void	ft_putnbr_fd(int n, int fd);
 
 #endif
