@@ -63,7 +63,7 @@ static char	**ft_copy_words(int words, char const *s, char c, char **new)
 			new[word][i++] = (char)s[index];
 		lastchar = s[index++];
 	}
-	new[words][0] = '\0';
+	new[words]/*[0]*/ = NULL/*'\0'*/;
 	return (new);
 }
 
