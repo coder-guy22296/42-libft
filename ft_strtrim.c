@@ -65,11 +65,17 @@ char		*ft_strtrim(char const *s)
 
 	index = 0;
 	low = ft_find_start(s, &index, -1);
-	if (low == -1)
-		return ((char *)s);
 	high = ft_find_end(s, &index, -1);
-	if (!(out_str = ft_strnew((high + 1) - low)))
-		return (NULL);
-	out_str = ft_copy_str(s, out_str, high, low);
+	if (low == high)
+	{
+		if (!(out_str = ft_strnew(0)))
+			return (NULL);
+	}
+	else
+	{
+		if (!(out_str = ft_strnew((high + 1) - low)))
+			return (NULL);
+		out_str = ft_copy_str(s, out_str, high, low);
+	}
 	return (out_str);
 }
