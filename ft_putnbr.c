@@ -17,7 +17,7 @@ void	ft_putnbr(int n)
 	int sign;
 
 	sign = ft_pop_sign(&n);
-	if (n > 1)
+	if (n >= 1)
 	{
 		ft_putnbr(n / 10);
 		if (sign)

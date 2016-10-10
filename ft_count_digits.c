@@ -20,7 +20,7 @@ int	ft_count_digits(int n)
 	i = 0;
 	ft_pop_sign(&n);
 	cur = n;
-	while (cur > 1)
+	while (cur >= 1)
 	{
 		cur /= 10;
 		i++;
