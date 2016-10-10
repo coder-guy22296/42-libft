@@ -15,14 +15,15 @@
 void	ft_putnbr(int n)
 {
 	int sign;
+	unsigned int num;
 
-	sign = ft_pop_sign(&n);
+	num = ft_pop_sign(n, &sign);
 	if (n >= 1)
 	{
-		ft_putnbr(n / 10);
+		ft_putnbr(num / 10);
 		if (sign)
 			ft_putchar('-');
 		else
-			ft_putchar((n % 10) + '0');
+			ft_putchar((num % 10) + '0');
 	}
 }

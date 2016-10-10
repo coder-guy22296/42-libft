@@ -15,11 +15,11 @@
 int	ft_count_digits(int n)
 {
 	int i;
-	double cur;
+	unsigned int cur;
+	int sign;
 
 	i = 0;
-	ft_pop_sign(&n);
-	cur = n;
+	cur = ft_pop_sign(n, &sign);
 	while (cur >= 1)
 	{
 		cur /= 10;

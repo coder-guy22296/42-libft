@@ -10,15 +10,17 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_pop_sign(int *n)
+unsigned int	ft_pop_sign(int n, int *sign)
 {
-	int sign;
+	unsigned int buff;
 
-	sign = 0;
-	if (*n < 0)
+	*sign = 0;
+	if (n < 0)
 	{
-		sign = 1;
-		*n *= -1;
+		*sign = 1;
+		buff = (unsigned int)(n * -1);
 	}
-	return (sign);
+	else
+		buff = (unsigned int)n;
+	return (buff);
 }

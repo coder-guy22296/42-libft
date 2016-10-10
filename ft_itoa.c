@@ -18,21 +18,22 @@ char	*ft_itoa(int n)
 	int		index;
 	char	*out_str;
 	int		sign;
+	unsigned int num;
 
 	len = ft_count_digits(n);
-	sign = ft_pop_sign(&n);
+	num = ft_pop_sign(n, &sign);
 	if(!(out_str = ft_strnew(len + sign)))
 		return (NULL);
 	index = (len + sign) - 1;
 	while (index > 0)
 	{
-		out_str[index] = (n % 10) + '0';
-		n /= 10;
+		out_str[index] = (num % 10) + '0';
+		num /= 10;
 		index--;
 	}
 	if (sign)
 		out_str[index] = '-';
 	else
-		out_str[index] = (n % 10) + '0';
+		out_str[index] = (num % 10) + '0';
 	return (out_str);
 }
