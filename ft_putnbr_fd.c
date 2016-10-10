@@ -20,7 +20,7 @@ void	ft_putnbr_fd(int n, int fd)
 	num = ft_pop_sign(n, &sign);
 	if (n >= 1)
 	{
-		ft_putnbr(num / 10);
+		ft_putnbr_fd(num / 10);
 		if (sign)
 			ft_putchar_fd('-', fd);
 		else
