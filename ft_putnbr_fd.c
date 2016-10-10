@@ -17,13 +17,12 @@ void	ft_putnbr_fd(int n, int fd)
 	int sign;
 	unsigned int num;
 
+	if (sign)
+		ft_putchar_fd('-', fd);
 	num = ft_pop_sign(n, &sign);
-	if (n >= 1)
+	if (num >= 1)
 	{
 		ft_putnbr_fd(num / 10, fd);
-		if (sign)
-			ft_putchar_fd('-', fd);
-		else
-			ft_putchar_fd((num % 10) + '0', fd);
+		ft_putchar_fd((num % 10) + '0', fd);
 	}
 }
