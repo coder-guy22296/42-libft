@@ -63,7 +63,7 @@ static char	**ft_copy_words(int words, char const *s, char c, char **new)
 			new[word][i++] = (char)s[index];
 		lastchar = s[index++];
 	}
-	new[words] = 0;
+	new[words] = NULL;
 	return (new);
 }
 
@@ -77,11 +77,6 @@ char		**ft_strsplit(char const *s, char c)
 		return (NULL);
 	if (!(str_arr = ft_alloc_word_mem(words, s, c, str_arr)))
 		return (NULL);
-	/*if (!(str_arr[words] = ft_strnew(0)))
-	{
-		ft_stradel(&str_arr);
-		return (NULL);
-	}*/
 	str_arr = ft_copy_words(words, s, c, str_arr);
 	return (str_arr);
 }
