@@ -59,7 +59,7 @@ static char	**ft_copy_words(int words, char const *s, char c, char **new)
 			i = 0;
 			word++;
 		}
-		if (s[index] != c)
+		if (s[index] != c && s[index] !=  '\0')
 			new[word][i++] = (char)s[index];
 		lastchar = s[index++];
 	}
