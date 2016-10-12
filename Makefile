@@ -22,7 +22,7 @@ ft_strdup.c ft_strstr.c ft_isprint.c ft_pop_sign.c ft_strequ.c ft_strsub.c\
 ft_isspace.c ft_putchar.c ft_striter.c ft_strtrim.c ft_itoa.c ft_putchar_fd.c\
 ft_striteri.c ft_tolower.c ft_lstadd.c ft_putendl.c ft_strjoin.c ft_toupper.c\
 ft_lstdel.c ft_putendl_fd.c ft_strlcat.c ft_lstdelone.c ft_putnbr.c ft_strlen.c\
-ft_lstiter.c ft_putnbr_fd.c ft_strmap.c
+ft_lstiter.c ft_putnbr_fd.c ft_strmap.c ft_lstaddend.c
 OFILES = ft_lstmap.o ft_putstr.o ft_strmapi.o ft_lstnew.o ft_putstr_fd.o\
 ft_strncat.o\
 ft_atoi.o ft_memalloc.o ft_stradel.o ft_strncmp.o ft_bzero.o ft_memccpy.o\
@@ -34,7 +34,7 @@ ft_strdup.o ft_strstr.o ft_isprint.o ft_pop_sign.o ft_strequ.o ft_strsub.o\
 ft_isspace.o ft_putchar.o ft_striter.o ft_strtrim.o ft_itoa.o ft_putchar_fd.o\
 ft_striteri.o ft_tolower.o ft_lstadd.o ft_putendl.o ft_strjoin.o ft_toupper.o\
 ft_lstdel.o ft_putendl_fd.o ft_strlcat.o ft_lstdelone.o ft_putnbr.o ft_strlen.o\
-ft_lstiter.o ft_putnbr_fd.o ft_strmap.o
+ft_lstiter.o ft_putnbr_fd.o ft_strmap.o ft_lstaddend.o
 HEADERS = libft.h
 
 all: $(NAME)

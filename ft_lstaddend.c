@@ -1,34 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstmap.c                                        :+:      :+:    :+:   */
+/*   ft_lstaddend.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cyildiri <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/10/12 12:31:35 by cyildiri          #+#    #+#             */
-/*   Updated: 2016/10/12 14:49:19 by cyildiri         ###   ########.fr       */
+/*   Created: 2016/10/12 14:46:14 by cyildiri          #+#    #+#             */
+/*   Updated: 2016/10/12 14:48:55 by cyildiri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
+void	ft_lstaddend(t_list **alist, t_list *new)
 {
-	t_list *current;
-	t_list *output;
+	t_list *cur;
 
-	output = NULL;
-	current = lst;
-	if (current)
-	{
-	    while (current->next)
-	    {
-			ft_lstadd(&output, f(current));
-			current = current->next;
-		}
-		ft_lstaddend(&output, f(current));
-	}
-	else
-		output = NULL;
-	return (output);
+	cur = *alist
+	while(cur->next)
+		cur = cur->next
+	cur->next = new;
 }
