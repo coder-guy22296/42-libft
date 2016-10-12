@@ -6,7 +6,7 @@
 /*   By: cyildiri <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/12 14:46:14 by cyildiri          #+#    #+#             */
-/*   Updated: 2016/10/12 14:48:55 by cyildiri         ###   ########.fr       */
+/*   Updated: 2016/10/12 14:55:37 by cyildiri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@ void	ft_lstaddend(t_list **alist, t_list *new)
 {
 	t_list *cur;
 
-	cur = *alist
+	cur = *alist;
 	while(cur->next)
-		cur = cur->next
+		cur = cur->next;
 	cur->next = new;
 }
