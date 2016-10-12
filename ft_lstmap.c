@@ -17,12 +17,18 @@ t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 	t_list *current;
 	t_list *output;
 
+	output = NULL;
 	current = lst;
-    while (current)
-    {
+	if (current)
+	{
+	    while (current->next)
+	    {
+			ft_lstadd(&output, f(current));
+			current = current->next;
+		}
 		ft_lstadd(&output, f(current));
-        if (current->next)
-            current = current->next;
 	}
+	else
+		output = NULL;
 	return (output);
 }
