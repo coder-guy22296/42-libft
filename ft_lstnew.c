@@ -6,7 +6,7 @@
 /*   By: cyildiri <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/11 14:56:49 by cyildiri          #+#    #+#             */
-/*   Updated: 2016/10/11 15:44:51 by cyildiri         ###   ########.fr       */
+/*   Updated: 2016/10/12 13:30:57 by cyildiri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ t_list	*ft_lstnew(void const *content, size_t content_size)
 		node->content_size = content_size;
 		if (!(node->content = ft_memalloc(content_size)))
 			return (NULL);
-		*(node->content) = *content;
+		node->content = (void *)content;
 	}
 	else
 	{
