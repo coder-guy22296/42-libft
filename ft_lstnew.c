@@ -23,7 +23,7 @@ t_list	*ft_lstnew(void const *content, size_t content_size)
 		node->content_size = content_size;
 		if (!(node->content = ft_memalloc(content_size)))
 			return (NULL);
-		node->content = (void *)content;
+		ft_memcpy(node->content, content, content_size);
 	}
 	else
 	{
