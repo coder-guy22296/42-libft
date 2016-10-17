@@ -63,7 +63,7 @@ char		*ft_strtrim(char const *s)
 	int		high;
 	int		low;
 
-	if(s == NULL)
+	if (s == NULL)
 		return (NULL);
 	index = 0;
 	low = ft_find_start(s, &index, -1);
