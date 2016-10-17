@@ -17,6 +17,8 @@ char	*ft_strmap(char const *s, char (*f)(char))
 	char	*out;
 	int		index;
 
+	if (s == NULL || f == NULL)
+		return (NULL);
 	if (!(out = ft_strdup(s)))
 		return (NULL);
 	index = 0;

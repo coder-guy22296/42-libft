@@ -18,6 +18,8 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
 	int				i;
 	char			*out_str;
 
+	if (s == NULL)
+		return (NULL);
 	if (!(out_str = ft_strnew(len)))
 		return (NULL);
 	index = start;
