@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-static void ft_cpy_helper(char **str_out,char const *s1, char const *s2)
+static void ft_cpy_helper(char **str_out, char const *s1, char const *s2)
 {
 	int		index;
 	int		i;
