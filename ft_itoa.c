@@ -14,15 +14,15 @@
 
 char	*ft_itoa(int n)
 {
-	int		len;
-	int		index;
-	char	*out_str;
-	int		sign;
-	unsigned int num;
+	int				len;
+	int				index;
+	char			*out_str;
+	int				sign;
+	unsigned int	num;
 
 	len = ft_count_digits(n);
 	num = ft_pop_sign(n, &sign);
-	if(!(out_str = ft_strnew(len + sign)))
+	if (!(out_str = ft_strnew(len + sign)))
 		return (NULL);
 	index = (len + sign) - 1;
 	while (index > 0)

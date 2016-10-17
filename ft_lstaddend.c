@@ -19,7 +19,7 @@ void	ft_lstaddend(t_list **alist, t_list *new)
 	cur = *alist;
 	if (cur)
 	{
-		while(cur->next)
+		while (cur->next)
 			cur = cur->next;
 		cur->next = new;
 	}

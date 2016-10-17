@@ -14,8 +14,8 @@
 
 void	ft_putnbr(int n)
 {
-	int sign;
-	unsigned int num;
+	int				sign;
+	unsigned int	num;
 
 	num = ft_pop_sign(n, &sign);
 	if (sign)

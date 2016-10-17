@@ -14,9 +14,9 @@
 
 int	ft_count_digits(int n)
 {
-	int i;
-	unsigned int cur;
-	int sign;
+	int				i;
+	unsigned int	cur;
+	int				sign;
 
 	i = 0;
 	cur = ft_pop_sign(n, &sign);
