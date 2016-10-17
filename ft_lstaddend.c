@@ -23,4 +23,6 @@ void	ft_lstaddend(t_list **alist, t_list *new)
 			cur = cur->next;
 		cur->next = new;
 	}
+	else
+		*alist = new;
 }

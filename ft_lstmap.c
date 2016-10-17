@@ -23,7 +23,7 @@ t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 	{
 		while (current->next)
 		{
-			ft_lstadd(&output, f(current));
+			ft_lstaddend(&output, f(current));
 			current = current->next;
 		}
 		ft_lstaddend(&output, f(current));
