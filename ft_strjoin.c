@@ -32,7 +32,6 @@ static void ft_cpy_helper(char **str_out,char const *s1, char const *s2)
 		i++;
 		index++;
 	}
-	*str_out[len] = '\0';
 }
 
 char	*ft_strjoin(char const *s1, char const *s2)
@@ -46,5 +45,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	if (!(str_out = ft_strnew(len)))
 		return (NULL);
 	ft_cpy_helper(&str_out, s1, s2);
+	str_out[len] = '\0';
 	return (str_out);
 }
