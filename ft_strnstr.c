@@ -29,7 +29,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 		{
 			ptr = (char *)&big[index];
 			if (lil_len <= (int)len - index)
-				if (lil_len <= ft_strlen(big) - index)
+				if (lil_len <= (int)ft_strlen(big) - index)
 					if (!ft_memcmp(ptr, little, ft_strlen(little)))
 						return (ptr);
 		}
