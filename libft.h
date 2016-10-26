@@ -27,7 +27,7 @@ typedef struct		s_lmap
 	size_t			key_size;
 	void			*content;
 	size_t			content_size;
-	t_map			*next;
+	struct s_lmap	*next;
 }					t_lmap;
 
 int					ft_isalpha(int c);

@@ -12,8 +12,8 @@
 
 #include "libft.h"
 
-void	ft_lmapadd(t_lmap **map, t_lmap *new);
+void	ft_lmapadd(t_lmap **map, t_lmap *new)
 {
-	new->next = *alst;
-	*alst = new;
+	new->next = *map;
+	*map = new;
 }
