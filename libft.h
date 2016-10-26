@@ -104,6 +104,6 @@ t_lmap				*ft_lmapnew(void const *key, void const *content,
 void				ft_lmapadd(t_lmap **map, t_lmap *new);
 int					ft_lmapremove(t_lmap **map, void const *key,
 							void (*del)(void *, size_t, void *, size_t));
-void				*ft_lmapget(t_lmap **map, void const *key);
+t_lmap				*ft_lmapget(t_lmap *map, void const *key);
 
 #endif
