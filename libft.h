@@ -102,7 +102,8 @@ void				ft_lstaddend(t_list **alist, t_list *new);
 t_lmap				*ft_lmapnew(void const *key, void const *content,
 								size_t content_size, size_t key_size);
 void				ft_lmapadd(t_lmap **map, t_lmap *new);
-void				ft_lmapremove(t_lmap **map, void const *key);
+int					ft_lmapremove(t_lmap **map, void const *key,
+							void (*del)(void *, size_t, void *, size_t));
 void				*ft_lmapget(t_lmap **map, void const *key);
 
 #endif
