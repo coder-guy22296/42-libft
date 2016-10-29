@@ -45,8 +45,8 @@ all: $(NAME)
 
 $(NAME):
 	gcc -Wall -Wextra -Werror -c $(SRC)
-	ar rc libft.a $(OFILES)
-	ranlib libft.a
+	ar rc $(NAME).a $(OFILES)
+	ranlib $(NAME).a
 clean:
 	rm -rf $(OFILES)
 fclean: clean

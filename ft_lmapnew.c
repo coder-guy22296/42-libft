@@ -17,14 +17,14 @@ t_lmap	*ft_lmapnew(void const *key, void const *content, size_t content_size,
 {
 	t_lmap *node;
 
+	if (!(node = (t_lmap *)ft_memalloc(sizeof(t_lmap))))
+		return (NULL);
 	if (key && (node->key = ft_memalloc(key_size)))
 	{
 		node->key_size = key_size;
 		ft_memcpy(node->key, key, key_size);
 	}
 	else
-		return (NULL);
-	if (!(node = (t_lmap *)ft_memalloc(sizeof(t_lmap))))
 		return (NULL);
 	if (content)
 	{
