@@ -39,7 +39,7 @@ OFILES = ft_memalloc.o ft_strdup.o ft_memccpy.o ft_strequ.o ft_atoi.o\
            ft_strsub.o ft_lstdelone.o ft_strclr.o ft_strtrim.o ft_lstiter.o\
             ft_strcmp.o ft_tolower.o ft_lstmap.o ft_strcpy.o ft_toupper.o\
              ft_lstnew.o ft_strdel.o
-HEADERS = libft.h
+HEADERS = includes\libft.h
 
 all: $(NAME)
 
