@@ -13,7 +13,7 @@
 #include "includes/libft.h"
 #include <stdlib.h>
 
-void	ft_delbuffer(t_buff *buffer)
+void	ft_delbuffer(void *buffer)
 {
 	free(buffer->buffer);
 	free(buffer);
