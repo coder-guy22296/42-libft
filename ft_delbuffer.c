@@ -15,6 +15,6 @@
 
 void	ft_delbuffer(void *buffer)
 {
-	free(buffer->buffer);
+	free(((t_buff *)buffer)->buffer);
 	free(buffer);
 }
