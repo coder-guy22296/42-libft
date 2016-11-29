@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include <string.h>
-#include "includes/libft.h"
+#include "libft.h"
 
 char	*ft_strstr(const char *big, const char *little)
 {

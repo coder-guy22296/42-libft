@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "libft.h"
 
 t_lmap	*ft_lmapget(t_lmap *map, void const *key)
 {

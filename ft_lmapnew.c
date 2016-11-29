@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "libft.h"
 
 t_lmap	*ft_lmapnew(void const *key, size_t key_size, void const *content,
 					size_t content_size)

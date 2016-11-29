@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "libft.h"
 
 int	ft_lmapremove(t_lmap **map, void const *key, void (*del_key)(void *),
 					void (*del_content)(void *))
