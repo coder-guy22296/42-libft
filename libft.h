@@ -12,6 +12,7 @@
 
 #ifndef LIBFT_H
 # define LIBFT_H
+# define BUFF_SIZE 32
 # include <string.h>
 
 typedef struct		s_list
@@ -116,5 +117,6 @@ char				*ft_strmerge(char **main_str, char *add_str);
 t_buff				*ft_newbuffer(int buffer_len, size_t elem_size);
 char				*ft_strnjoin(char const *s1, char const *s2, size_t s2size);
 void				ft_delbuffer(void *buffer);
+int					get_next_line(const int fd, char **line);
 
 #endif
