@@ -75,7 +75,7 @@ char		**ft_strsplit(char const *s, char c)
 	if (s == NULL)
 		return (NULL);
 	words = ft_cntwords(s, c);
-	if (!(str_arr = (char **)malloc(sizeof(char *) * (words + 1))))
+	if (!(str_arr = (char **)ft_memalloc(sizeof(char *) * (words + 1))))
 		return (NULL);
 	if (!(str_arr = ft_alloc_word_mem(words, s, c, str_arr)))
 		return (NULL);
